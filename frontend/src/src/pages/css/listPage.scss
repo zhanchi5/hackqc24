@@ -1,0 +1,36 @@
+/*!
+ * Copyright (c) 2024. HackQC24.
+ *  Author: Alpha Oumar
+ *  Version: 1.0
+ */
+
+@import "../../responsive";
+
+.listPage {
+  display: flex;
+  height: 100%;
+
+  .listContainer {
+    flex: 3;
+    height: 100%;
+
+    .wrapper{
+      height: 100%;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      overflow-y: scroll;
+      padding-bottom: 50px;
+    }
+  }
+  .mapContainer {
+    flex: 2;
+    height: 100%;
+    background-color: #ffffff;
+
+    @include md{
+      display: none;
+    }
+  }
+}

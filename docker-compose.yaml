@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  backend:
+    build: ./backend
+    dns:
+      - 8.8.8.8
+    ports:
+      - "8081:80"
+    depends_on:
+        - db
+    environment:
+      - FLASK_APP=/app/app.py
+      - DATABASE_URL=postgresql://qltrs:qltrs@db:5432/qltrs
+    networks:
+      - internal-network
+
+  db:
+    build: ./db
+    ports:
+      - "15432:5432"
+    expose:
+      - "5432"
+    networks:
+      - internal-network
+
+#  frontend:
+#    build: ./frontend
+#    ports:
+#      - "8080:80"
+#    depends_on:
+#      - backend
+#    environment:
+#      - FLASK_APP_BACKEND_URL=http://backend:80
+
+networks:
+    internal-network:
+        driver: bridge

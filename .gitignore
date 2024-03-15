@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+.env
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# IDE or editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.pyc
+*.pyo
+*~
+*~
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+*.tar.gz
+*.exe
+*.msi
+*.egg-info
+*.dist-info
+*.wheel
+*.bak
+*.log
+
+# macOS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Compiled Python files
+*.pyc
+
+# Compiled C extensions
+*.so
+
+# Python environment
+.env/

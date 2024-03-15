@@ -1,0 +1,23 @@
+/*!
+ * Copyright (c) 2024. HackQC24.
+ *  Author: Alpha Oumar
+ *  Version: 1.0
+ */
+
+.popupContainer{
+  display: flex;
+  gap: 20px;
+
+  img{
+    width: 64px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
